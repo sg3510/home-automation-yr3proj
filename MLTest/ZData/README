@@ -1,0 +1,16 @@
+Home_M.2010.ZigBee Dataset
+==========================
+
+This dataset contains power meter, ambient light, and ambient 
+temperature sensors readings; incluing weather and daylight data. 
+Sensor readings are at 15 minute intervals.
+
+All those wishing to reference this dataset in published work 
+(academic or otherwise) should cite the following paper:
+
+Stephen Makonin and Fred Popowich, “An intelligent agent for determining 
+home occupancy using power monitors and light sensors,” Toward Useful 
+Services for Elderly and People with Disabilities, pp. 236–240, 2011.
+
+For LaTeX users there is a please_cite.bib file for you to use.
+
