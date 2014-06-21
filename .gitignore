@@ -74,3 +74,4 @@ slprj/
 *.out
 *.synctex.gz
 *.zip
+*.fdb_latexmk
