@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: pygp
+Version: 1.1.09
+Summary: Python package for Gaussian process regression in python 
+
+========================================================
+
+demo_gpr.py explains how to perform basic regression tasks.
+demo_gpr_robust.py shows how to apply EP for robust Gaussian process regression.
+
+gpr.py Basic gp regression package
+gpr_ep.py GP regression with EP likelihood models
+
+covar: covariance functions
+Home-page: https://github.com/PMBio/pygp
+Author: Oliver Stegle, Max Zwiessele, Nicolo Fusi
+Author-email: EMAIL HERE
+License: GPLv2
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: scipy
+Requires: sphinx
