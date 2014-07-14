@@ -1,0 +1,72 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
+
+<script type='text/javascript'>
+
+$(function() {
+
+	$.getJSON('http://ee-ug1.ee.ic.ac.uk/actual_web2/get_new_data.php', function(data) {
+		// Create the chart	
+		var b = eval(data);
+		$('#container').highcharts('StockChart', {
+			rangeSelector : {
+				selected : 1
+			},
+
+			title : {
+				text : 'Temperature'
+			},
+			
+			xAxis: {
+				ordinal: false 
+			},
+			
+			yAxis: [{
+		        title: {
+		            text: 'Temperature'
+		        }
+		    }, {
+		        title: {
+		            text: 'Humidity'
+		        },
+		        opposite: true
+		    }],
+			
+			series : [{
+				name : 'Temperature',
+				data : b,
+				tooltip: {
+					valueDecimals: 0,
+					valueSuffix: '°C'
+				}
+			}]
+		});
+		$.getJSON('http://ee-ug1.ee.ic.ac.uk/actual_web2/get_new_data2.php', function(data2) {
+		var c = eval(data2);
+		var chart = $('#container').highcharts();
+		chart.addSeries({
+				name : 'Humidity',
+				data : c,
+				yAxis: 1,
+				tooltip: {
+					valueDecimals: 0,
+					valueSuffix: '%'
+				}
+                            });
+		});
+	});
+
+});
+
+
+</script>
+</head>
+
+<body>
+<div id="container" style="height: 500px; min-width: 500px"></div>
+</body>
+</html>

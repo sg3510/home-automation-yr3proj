@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+<script src="http://code.highcharts.com/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script type='text/javascript'>
+
+$.get("poll_API.php");
+
+</script>
+
+    <script type='text/javascript'>
+	  setTimeout(function () { location.reload(1); }, 180000);
+    </script>
+  
+
+  <div id="chart_div" style="width: 900px; height: 500px;">
+  <div id="container" style="height: 500px; min-width: 500px"></div>
+  
+</body>
+</html>
+
+

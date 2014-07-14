@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin-top: 20px;
+}
+
+.row.content {
+	background: #fff;
+	background: rgba(255,255,255,.8);
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0px #000;
+	padding: 15px;
+}
+
+.row.content h4 {
+	color: #333;
+}
+
+footer {
+	margin-top: 10px;
+	width: 100%;
+}
+footer p {
+	color: #fff;
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 85%;
+}
